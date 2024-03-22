@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    font-family: 'lato',sans-serif;
+}
+    
+
+
+    body {
+    background-image: url(purple-neon.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 90px;
+    margin-top: 0%;
+    
+}
+
+
+.container {
+    background-color: #0b538e56;
+    
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    align-items: flex-end;
+    box-shadow: 3px 8px 10px rgba(10, 7, 47, 0.659);
+    transition: 0.5s ease-in-out;
+    
+}
+
+#calculator {
+    background-color: #003554d3;
+    padding: 29px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#output {
+    font-size: 24px;
+}
+
+h1{
+    color: #58c7fe;
+    font-size: 40px;
+}
+
+#input-display, #output-display {
+    font-size: 27px; 
+}
+    
+    
+
+
+
+    .container {
+        /* Your existing styles */
+    
+        /* Add animation properties */
+        animation-name: fadeInDown;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+    
+    #calculator {
+        /* Your existing styles */
+    
+        /* Add animation properties */
+        animation-name: bounceIn;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+    
+    /* Define the animations */
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes bounceIn {
+        from {
+            opacity: 0;
+            transform: scale(0.8);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
